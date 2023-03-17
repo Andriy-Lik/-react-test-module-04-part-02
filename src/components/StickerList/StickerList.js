@@ -1,26 +1,21 @@
 import { Sticker } from 'components/Sticker/Sticker';
-import { Component } from 'react';
+// import { useState } from 'react';
 import { List } from './StickerList.styled';
 
-export class StickerList extends Component {
-  state = {
-    selectedIdx: null,
-  };
+export const StickerList = ({ items, onDelete }) => {
+  // const [selectedIdx, setSelectedIdx] = useState(null);
 
-  changeSelected = idx => {
-    // ...
-  };
+  // const changeSelected = idx => {
+  //   // ...
+  // };
 
-  render() {
-    const { items, onDelete } = this.props;
-    return (
-      <List>
-        {items.map((item, idx) => (
-          <li key={idx}>
-            <Sticker sticker={item} onDelete={onDelete} />
-          </li>
-        ))}
-      </List>
-    );
-  }
+  return (
+    <List>
+      {items.map((item, idx) => (
+        <li key={idx}>
+          <Sticker sticker={item} onDelete={onDelete} />
+        </li>
+      ))}
+    </List>
+  );
 }

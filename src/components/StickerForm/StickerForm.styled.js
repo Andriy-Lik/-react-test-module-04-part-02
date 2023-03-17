@@ -6,7 +6,7 @@ export const Form = styled.form.attrs({ autocomplete: 'off' })`
   gap: 12px;
   margin-bottom: 16px;
   padding: 8px;
-  border: 1px solid #2a2a2a;
+  border: 2px solid Gray;
   border-radius: 4px;
 `;
 
@@ -19,9 +19,13 @@ export const Field = styled.label`
 export const Input = styled.input.attrs({ type: 'text' })`
   padding: 4px;
   font: inherit;
+  border: 2px solid Gray;
+  border-radius: 3px;
 `;
 
 export const Button = styled.button.attrs({ type: 'submit' })`
   padding: 4px 8px;
   cursor: pointer;
+  border: 2px solid Gray;
+  border-radius: 3px;
 `;

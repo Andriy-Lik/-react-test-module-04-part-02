@@ -15,7 +15,7 @@ const getInitialStickers = () => {
   }
 };
 
-export const App = () => {
+export const AppStickers = () => {
   const [stickers, setStickers] = useState(getInitialStickers);
 
   const addSticker = (img, label) => {
